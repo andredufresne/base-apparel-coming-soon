@@ -13,7 +13,7 @@ body {
   align-self: start;
   position: relative;
   width: 20%;
-  margin: 5% 5%; }
+  margin: 5%; }
 
 .profile-picture {
   position: relative;
@@ -58,6 +58,9 @@ input[type=text] {
   width: 25%;
   object-fit: contain; }
 
+.desktop {
+  display: none; }
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -66,5 +69,38 @@ input[type=text] {
 
 .attribution a {
   color: #3e52a3; }
+
+@media screen and (min-width: 750px) {
+  .desktop {
+    display: inline; }
+
+  body {
+    text-align: left;
+    margin-left: 5%; }
+
+  .home-page {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start; }
+
+  h1 {
+    margin-top: 15%; }
+
+  p {
+    font-size: 16px;
+    width: 40%;
+    margin-bottom: 2%; }
+
+  .profile-picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%; }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
